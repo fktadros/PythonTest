@@ -1,6 +1,6 @@
-import random
+import random # import the random module
 
-def getAnswer(answerNumber):
+def getAnswer(answerNumber): # define the function that calls 1 of 9 different eight ball answers
     if answerNumber == 1:
         return 'It is certain'
     elif answerNumber == 2:
@@ -20,6 +20,6 @@ def getAnswer(answerNumber):
     elif answerNumber == 9:
         return 'Very doubtful'
 
-r = random.randint(1,9)
+r = random.randint(1,9) # generate a random integer that can then be passed to the function above and then print the fortune.
 fortune = getAnswer(r)
 print(fortune)
